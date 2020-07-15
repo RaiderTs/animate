@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./Slider\ img\ 2.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 3;
+
+}
+.main_title {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.overlay {
+    width: 2%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    background: url(./Slider\ img\ 3.jpg) no-repeat center;
+    background-attachment: fixed;
+    transition: 1.2s linear;
+
+}
+.overlay:hover {
+    transition: 0s linear;
+    opacity: 0;
+}
